@@ -1,8 +1,38 @@
+# Virtual Environment
 venv/
+.venv/
+
+# Python
 __pycache__/
 *.pyc
+
+# Jupyter
 .ipynb_checkpoints/
+
+# VS Code
 .vscode/
 
+# Logs
+logs/
+*.log
+
+# Data
+data/raw/
+data/windows/
+data/processed/
+
+# Notebook generated data
+notebook/data/
+
+# Artifacts
+artifacts/
+
+# ML Models
+*.pkl
+
+# Environment
+.env
+
+# Kaggle datasets
 notebook/train_transaction.csv
 notebook/train_identity.csv
