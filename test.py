@@ -1,10 +1,5 @@
-from src.components.data_ingestion import DataIngestion
+from src.utils import load_pickle
 
-if __name__ == "__main__":
-    obj = DataIngestion()
+model = load_pickle("artifacts/fraud_model.pkl")
 
-    train_df, w2_df, w3_df = obj.initiate_data_ingestion()
-
-    print(train_df.shape)
-    print(w2_df.shape)
-    print(w3_df.shape)
+print(model.feature_names_in_)

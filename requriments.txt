@@ -5,3 +5,5 @@ xgboost
 catboost
 lightgbm
 imbalanced-learn
+fastapi
+uvicorn

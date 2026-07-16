@@ -42,3 +42,12 @@ def load_pickle(file_path):
 
         logger.error(e)
         raise CustomException(e,sys)
+    
+def get_sample_request(feature_names):
+
+    return {
+        "features": {
+            feature: 0
+            for feature in feature_names
+        }
+    }
